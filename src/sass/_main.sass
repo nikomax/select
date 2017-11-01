@@ -1,0 +1,47 @@
+*
+	font-family: 'Exo 2', sans-serif;
+	font-size: 15px
+
+.out
+	display: flex
+	align-items: center
+	justify-content: center
+	height: 100vh
+
+.blabla
+	display: block
+	width: 500px
+	height: 50px
+	background: white
+	border: 1px solid #e2e2e2
+	padding: 0 20px
+	cursor: pointer
+	appearance: none
+	position: relative
+
+.select
+	display: inline-block
+	position: relative
+	&:after
+		content: "▾"
+		display: block
+		position: absolute
+		top: 10px
+		right: 15px
+		font-size: 25px
+
+.options
+	display: none
+	position: absolute
+	top: 55px
+	left: 0
+	width: 100%
+	border: 1px solid #e2e2e2
+	font-size: 15px
+	max-height: 240px
+	overflow: auto
+	li
+		width: 100%
+		cursor: pointer
+		padding: 10px 20px
+
